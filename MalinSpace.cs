@@ -47,12 +47,12 @@ namespace MalinAstrionics
                 {
                     double observed = double.Parse(TextBoxObserved.Text);
                     double rest = double.Parse(TextBoxRest.Text);
-                    velocity = pipeProxy.GetStarVelocity(observed, rest).ToString();
+                    velocity = pipeProxy.GetStarVelocity(observed, rest).ToString("F2"); //Keep 2 digits after decimal point
                 }
                 if (!string.IsNullOrEmpty(TextBoxParaAngle.Text))
                 {
                     double angle = double.Parse(TextBoxParaAngle.Text);
-                    distance = pipeProxy.GetStarDistance(angle).ToString();
+                    distance = pipeProxy.GetStarDistance(angle).ToString("F4"); //Keep 4 digits after decimal point
                 }
                 if (!string.IsNullOrEmpty(TextBoxCelsius.Text))
                 {
@@ -62,12 +62,10 @@ namespace MalinAstrionics
                 if (!string.IsNullOrEmpty(TextBoxMass.Text))
                 {
                     double mass = double.Parse(TextBoxMass.Text + "E" + UpDownNotation.Value.ToString());
-                    horizon = pipeProxy.GetSchRadius(mass).ToString();
+                    horizon = pipeProxy.GetSchRadius(mass).ToString("E1");  // kepp 1 decimal place
                 }
                 string[] row = { distance, kelvin, horizon };
                 ListViewResults.Items.Add(velocity.ToString()).SubItems.AddRange(row);
-
-
             }
             catch (ActionNotSupportedException ex)
             {
@@ -145,7 +143,6 @@ namespace MalinAstrionics
             {
                 Trace.WriteLine(ex.Message);
             }
-
         }
 
         private void TextBoxObserved_KeyPress(object sender, KeyPressEventArgs e)

@@ -300,7 +300,7 @@
             this.ListViewResults.Location = new System.Drawing.Point(479, 51);
             this.ListViewResults.Margin = new System.Windows.Forms.Padding(4);
             this.ListViewResults.Name = "ListViewResults";
-            this.ListViewResults.Size = new System.Drawing.Size(686, 502);
+            this.ListViewResults.Size = new System.Drawing.Size(728, 502);
             this.ListViewResults.TabIndex = 31;
             this.ListViewResults.UseCompatibleStateImageBehavior = false;
             this.ListViewResults.View = System.Windows.Forms.View.Details;
@@ -330,7 +330,7 @@
             this.StatusStripInfo.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.StatusStripInfo.Location = new System.Drawing.Point(0, 675);
             this.StatusStripInfo.Name = "StatusStripInfo";
-            this.StatusStripInfo.Size = new System.Drawing.Size(1207, 22);
+            this.StatusStripInfo.Size = new System.Drawing.Size(1237, 22);
             this.StatusStripInfo.TabIndex = 32;
             this.StatusStripInfo.Text = "TestInfomation";
             // 
@@ -338,7 +338,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1207, 697);
+            this.ClientSize = new System.Drawing.Size(1237, 697);
             this.Controls.Add(this.StatusStripInfo);
             this.Controls.Add(this.ListViewResults);
             this.Controls.Add(this.groupBoxHorizon);
