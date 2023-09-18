@@ -67,6 +67,7 @@ namespace MalinAstrionics
                 }
                 string[] row = { distance, kelvin, horizon };
                 ListViewResults.Items.Add(velocity.ToString()).SubItems.AddRange(row);
+                ResetInputs();  //ResetInputs
             }
             catch (ActionNotSupportedException ex)
             {
@@ -145,7 +146,17 @@ namespace MalinAstrionics
                 Trace.WriteLine(ex.Message);
             }
         }
-
+        //Reset Inputs
+        private void ResetInputs()
+        { 
+            TextBoxObserved.Clear();
+            TextBoxRest.Clear();
+            TextBoxCelsius.Clear();
+            TextBoxMass.Clear();
+            TextBoxParaAngle.Clear();
+            UpDownNotation.Value = 1;
+            UpDownPlusMinus.Text = "-";
+        }
         private void TextBoxObserved_KeyPress(object sender, KeyPressEventArgs e)
         {
             string text = ((Control)sender).Text;

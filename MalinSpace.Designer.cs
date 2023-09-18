@@ -60,12 +60,21 @@
             this.ButtonFrench = new System.Windows.Forms.Button();
             this.ButtonUK = new System.Windows.Forms.Button();
             this.ButtonGerman = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.styleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBoxVelocity.SuspendLayout();
             this.groupBoxDistance.SuspendLayout();
             this.groupBoxTemperature.SuspendLayout();
             this.groupBoxHorizon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownNotation)).BeginInit();
             this.groupBoxFlag.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // TextBoxObserved
@@ -82,12 +91,12 @@
             // 
             // groupBoxVelocity
             // 
-            resources.ApplyResources(this.groupBoxVelocity, "groupBoxVelocity");
             this.groupBoxVelocity.Controls.Add(this.ButtonVelocity);
             this.groupBoxVelocity.Controls.Add(this.label5);
             this.groupBoxVelocity.Controls.Add(this.label1);
             this.groupBoxVelocity.Controls.Add(this.TextBoxObserved);
             this.groupBoxVelocity.Controls.Add(this.TextBoxRest);
+            resources.ApplyResources(this.groupBoxVelocity, "groupBoxVelocity");
             this.groupBoxVelocity.Name = "groupBoxVelocity";
             this.groupBoxVelocity.TabStop = false;
             // 
@@ -110,10 +119,10 @@
             // 
             // groupBoxDistance
             // 
-            resources.ApplyResources(this.groupBoxDistance, "groupBoxDistance");
             this.groupBoxDistance.Controls.Add(this.ButtonStarDistance);
             this.groupBoxDistance.Controls.Add(this.label3);
             this.groupBoxDistance.Controls.Add(this.TextBoxParaAngle);
+            resources.ApplyResources(this.groupBoxDistance, "groupBoxDistance");
             this.groupBoxDistance.Name = "groupBoxDistance";
             this.groupBoxDistance.TabStop = false;
             // 
@@ -137,19 +146,19 @@
             // 
             // groupBoxTemperature
             // 
-            resources.ApplyResources(this.groupBoxTemperature, "groupBoxTemperature");
             this.groupBoxTemperature.Controls.Add(this.UpDownPlusMinus);
             this.groupBoxTemperature.Controls.Add(this.ButtonKelvin);
             this.groupBoxTemperature.Controls.Add(this.labelCelsius);
             this.groupBoxTemperature.Controls.Add(this.TextBoxCelsius);
+            resources.ApplyResources(this.groupBoxTemperature, "groupBoxTemperature");
             this.groupBoxTemperature.Name = "groupBoxTemperature";
             this.groupBoxTemperature.TabStop = false;
             // 
             // UpDownPlusMinus
             // 
-            resources.ApplyResources(this.UpDownPlusMinus, "UpDownPlusMinus");
             this.UpDownPlusMinus.Items.Add(resources.GetString("UpDownPlusMinus.Items"));
             this.UpDownPlusMinus.Items.Add(resources.GetString("UpDownPlusMinus.Items1"));
+            resources.ApplyResources(this.UpDownPlusMinus, "UpDownPlusMinus");
             this.UpDownPlusMinus.Name = "UpDownPlusMinus";
             this.UpDownPlusMinus.ReadOnly = true;
             // 
@@ -173,12 +182,12 @@
             // 
             // groupBoxHorizon
             // 
-            resources.ApplyResources(this.groupBoxHorizon, "groupBoxHorizon");
             this.groupBoxHorizon.Controls.Add(this.label2);
             this.groupBoxHorizon.Controls.Add(this.UpDownNotation);
             this.groupBoxHorizon.Controls.Add(this.ButtonSchRadius);
             this.groupBoxHorizon.Controls.Add(this.labelMass);
             this.groupBoxHorizon.Controls.Add(this.TextBoxMass);
+            resources.ApplyResources(this.groupBoxHorizon, "groupBoxHorizon");
             this.groupBoxHorizon.Name = "groupBoxHorizon";
             this.groupBoxHorizon.TabStop = false;
             // 
@@ -222,12 +231,12 @@
             // 
             // ListViewResults
             // 
-            resources.ApplyResources(this.ListViewResults, "ListViewResults");
             this.ListViewResults.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnVelocity,
             this.columnDistance,
             this.columnKelvin,
             this.columnHorizon});
+            resources.ApplyResources(this.ListViewResults, "ListViewResults");
             this.ListViewResults.HideSelection = false;
             this.ListViewResults.Name = "ListViewResults";
             this.ListViewResults.UseCompatibleStateImageBehavior = false;
@@ -251,42 +260,94 @@
             // 
             // StatusStripInfo
             // 
-            resources.ApplyResources(this.StatusStripInfo, "StatusStripInfo");
             this.StatusStripInfo.ImageScalingSize = new System.Drawing.Size(20, 20);
+            resources.ApplyResources(this.StatusStripInfo, "StatusStripInfo");
             this.StatusStripInfo.Name = "StatusStripInfo";
             // 
             // groupBoxFlag
             // 
-            resources.ApplyResources(this.groupBoxFlag, "groupBoxFlag");
             this.groupBoxFlag.Controls.Add(this.ButtonFrench);
             this.groupBoxFlag.Controls.Add(this.ButtonUK);
             this.groupBoxFlag.Controls.Add(this.ButtonGerman);
+            resources.ApplyResources(this.groupBoxFlag, "groupBoxFlag");
             this.groupBoxFlag.Name = "groupBoxFlag";
             this.groupBoxFlag.TabStop = false;
             // 
             // ButtonFrench
             // 
-            resources.ApplyResources(this.ButtonFrench, "ButtonFrench");
             this.ButtonFrench.BackgroundImage = global::MalinAstrionics.Properties.Resources.france;
+            resources.ApplyResources(this.ButtonFrench, "ButtonFrench");
             this.ButtonFrench.Name = "ButtonFrench";
             this.ButtonFrench.UseVisualStyleBackColor = true;
             this.ButtonFrench.Click += new System.EventHandler(this.ButtonUK_Click);
             // 
             // ButtonUK
             // 
-            resources.ApplyResources(this.ButtonUK, "ButtonUK");
             this.ButtonUK.BackgroundImage = global::MalinAstrionics.Properties.Resources.uk;
+            resources.ApplyResources(this.ButtonUK, "ButtonUK");
             this.ButtonUK.Name = "ButtonUK";
             this.ButtonUK.UseVisualStyleBackColor = true;
             this.ButtonUK.Click += new System.EventHandler(this.ButtonUK_Click);
             // 
             // ButtonGerman
             // 
-            resources.ApplyResources(this.ButtonGerman, "ButtonGerman");
             this.ButtonGerman.BackgroundImage = global::MalinAstrionics.Properties.Resources.germanySQ;
+            resources.ApplyResources(this.ButtonGerman, "ButtonGerman");
             this.ButtonGerman.Name = "ButtonGerman";
             this.ButtonGerman.UseVisualStyleBackColor = true;
             this.ButtonGerman.Click += new System.EventHandler(this.ButtonUK_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.styleToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.Name = "menuStrip1";
+            // 
+            // styleToolStripMenuItem
+            // 
+            this.styleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.modeToolStripMenuItem,
+            this.colourToolStripMenuItem});
+            this.styleToolStripMenuItem.Name = "styleToolStripMenuItem";
+            resources.ApplyResources(this.styleToolStripMenuItem, "styleToolStripMenuItem");
+            // 
+            // modeToolStripMenuItem
+            // 
+            this.modeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dayToolStripMenuItem,
+            this.nightToolStripMenuItem});
+            this.modeToolStripMenuItem.Name = "modeToolStripMenuItem";
+            resources.ApplyResources(this.modeToolStripMenuItem, "modeToolStripMenuItem");
+            // 
+            // dayToolStripMenuItem
+            // 
+            this.dayToolStripMenuItem.Name = "dayToolStripMenuItem";
+            resources.ApplyResources(this.dayToolStripMenuItem, "dayToolStripMenuItem");
+            // 
+            // nightToolStripMenuItem
+            // 
+            this.nightToolStripMenuItem.Name = "nightToolStripMenuItem";
+            resources.ApplyResources(this.nightToolStripMenuItem, "nightToolStripMenuItem");
+            // 
+            // colourToolStripMenuItem
+            // 
+            this.colourToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.formToolStripMenuItem,
+            this.buttonsToolStripMenuItem});
+            this.colourToolStripMenuItem.Name = "colourToolStripMenuItem";
+            resources.ApplyResources(this.colourToolStripMenuItem, "colourToolStripMenuItem");
+            // 
+            // formToolStripMenuItem
+            // 
+            this.formToolStripMenuItem.Name = "formToolStripMenuItem";
+            resources.ApplyResources(this.formToolStripMenuItem, "formToolStripMenuItem");
+            // 
+            // buttonsToolStripMenuItem
+            // 
+            this.buttonsToolStripMenuItem.Name = "buttonsToolStripMenuItem";
+            resources.ApplyResources(this.buttonsToolStripMenuItem, "buttonsToolStripMenuItem");
             // 
             // MalinSpace
             // 
@@ -294,11 +355,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBoxFlag);
             this.Controls.Add(this.StatusStripInfo);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.ListViewResults);
             this.Controls.Add(this.groupBoxHorizon);
             this.Controls.Add(this.groupBoxTemperature);
             this.Controls.Add(this.groupBoxDistance);
             this.Controls.Add(this.groupBoxVelocity);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "MalinSpace";
             this.Load += new System.EventHandler(this.MalinSpace_Load);
             this.groupBoxVelocity.ResumeLayout(false);
@@ -311,6 +374,8 @@
             this.groupBoxHorizon.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownNotation)).EndInit();
             this.groupBoxFlag.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -348,5 +413,13 @@
         private System.Windows.Forms.Button ButtonGerman;
         private System.Windows.Forms.Button ButtonFrench;
         private System.Windows.Forms.Button ButtonUK;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem styleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem colourToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dayToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nightToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem formToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem buttonsToolStripMenuItem;
     }
 }
