@@ -9,6 +9,7 @@ using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls;
 using System.Windows.Forms;
@@ -175,6 +176,29 @@ namespace MalinAstrionics
         {
             //Set the minus as a default value in Celsius
             UpDownPlusMinus.SelectedIndex = 1;
+        }
+
+
+        private void ButtonUK_Click(object sender, EventArgs e)
+        {
+            //Get the buttons name 
+            string flagName = ((Control)sender).Text;
+
+            
+                switch (flagName)
+                {
+                    case "ButtonUK":
+                        Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-GB");
+                        break;
+                    case "ButtonFrench":
+                        Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr-FR");
+                        break;
+                    case "ButtonGerman":
+                        Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("es-ES");
+                        break;
+                }
+                Controls.Clear();
+                InitializeComponent();
         }
     }
 }

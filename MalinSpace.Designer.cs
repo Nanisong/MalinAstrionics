@@ -55,11 +55,16 @@
             this.columnKelvin = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHorizon = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.StatusStripInfo = new System.Windows.Forms.StatusStrip();
+            this.groupBoxFlag = new System.Windows.Forms.GroupBox();
+            this.ButtonFrench = new System.Windows.Forms.Button();
+            this.ButtonUK = new System.Windows.Forms.Button();
+            this.ButtonGerman = new System.Windows.Forms.Button();
             this.groupBoxVelocity.SuspendLayout();
             this.groupBoxDistance.SuspendLayout();
             this.groupBoxTemperature.SuspendLayout();
             this.groupBoxHorizon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownNotation)).BeginInit();
+            this.groupBoxFlag.SuspendLayout();
             this.SuspendLayout();
             // 
             // TextBoxObserved
@@ -334,11 +339,56 @@
             this.StatusStripInfo.TabIndex = 32;
             this.StatusStripInfo.Text = "TestInfomation";
             // 
+            // groupBoxFlag
+            // 
+            this.groupBoxFlag.Controls.Add(this.ButtonFrench);
+            this.groupBoxFlag.Controls.Add(this.ButtonUK);
+            this.groupBoxFlag.Controls.Add(this.ButtonGerman);
+            this.groupBoxFlag.Location = new System.Drawing.Point(508, 565);
+            this.groupBoxFlag.Name = "groupBoxFlag";
+            this.groupBoxFlag.Size = new System.Drawing.Size(676, 93);
+            this.groupBoxFlag.TabIndex = 33;
+            this.groupBoxFlag.TabStop = false;
+            // 
+            // ButtonFrench
+            // 
+            this.ButtonFrench.BackgroundImage = global::MalinAstrionics.Properties.Resources.france;
+            this.ButtonFrench.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ButtonFrench.Location = new System.Drawing.Point(281, 22);
+            this.ButtonFrench.Name = "ButtonFrench";
+            this.ButtonFrench.Size = new System.Drawing.Size(120, 66);
+            this.ButtonFrench.TabIndex = 4;
+            this.ButtonFrench.UseVisualStyleBackColor = true;
+            this.ButtonFrench.Click += new System.EventHandler(this.ButtonUK_Click);
+            // 
+            // ButtonUK
+            // 
+            this.ButtonUK.BackgroundImage = global::MalinAstrionics.Properties.Resources.uk;
+            this.ButtonUK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ButtonUK.ImageIndex = 0;
+            this.ButtonUK.Location = new System.Drawing.Point(84, 21);
+            this.ButtonUK.Name = "ButtonUK";
+            this.ButtonUK.Size = new System.Drawing.Size(120, 66);
+            this.ButtonUK.TabIndex = 3;
+            this.ButtonUK.UseVisualStyleBackColor = true;
+            // 
+            // ButtonGerman
+            // 
+            this.ButtonGerman.BackgroundImage = global::MalinAstrionics.Properties.Resources.germanySQ;
+            this.ButtonGerman.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ButtonGerman.Location = new System.Drawing.Point(482, 21);
+            this.ButtonGerman.Name = "ButtonGerman";
+            this.ButtonGerman.Size = new System.Drawing.Size(120, 66);
+            this.ButtonGerman.TabIndex = 2;
+            this.ButtonGerman.UseVisualStyleBackColor = true;
+            this.ButtonGerman.Click += new System.EventHandler(this.ButtonUK_Click);
+            // 
             // MalinSpace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1237, 697);
+            this.Controls.Add(this.groupBoxFlag);
             this.Controls.Add(this.StatusStripInfo);
             this.Controls.Add(this.ListViewResults);
             this.Controls.Add(this.groupBoxHorizon);
@@ -357,6 +407,7 @@
             this.groupBoxHorizon.ResumeLayout(false);
             this.groupBoxHorizon.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownNotation)).EndInit();
+            this.groupBoxFlag.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -390,5 +441,9 @@
         private System.Windows.Forms.NumericUpDown UpDownNotation;
         private System.Windows.Forms.DomainUpDown UpDownPlusMinus;
         private System.Windows.Forms.StatusStrip StatusStripInfo;
+        private System.Windows.Forms.GroupBox groupBoxFlag;
+        private System.Windows.Forms.Button ButtonGerman;
+        private System.Windows.Forms.Button ButtonFrench;
+        private System.Windows.Forms.Button ButtonUK;
     }
 }
