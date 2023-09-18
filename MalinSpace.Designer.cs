@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MalinSpace));
             this.TextBoxObserved = new System.Windows.Forms.TextBox();
             this.TextBoxRest = new System.Windows.Forms.TextBox();
             this.groupBoxVelocity = new System.Windows.Forms.GroupBox();
@@ -69,196 +70,132 @@
             // 
             // TextBoxObserved
             // 
-            this.TextBoxObserved.Location = new System.Drawing.Point(34, 62);
+            resources.ApplyResources(this.TextBoxObserved, "TextBoxObserved");
             this.TextBoxObserved.Name = "TextBoxObserved";
-            this.TextBoxObserved.Size = new System.Drawing.Size(158, 36);
-            this.TextBoxObserved.TabIndex = 4;
             this.TextBoxObserved.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxObserved_KeyPress);
             // 
             // TextBoxRest
             // 
-            this.TextBoxRest.Location = new System.Drawing.Point(34, 131);
+            resources.ApplyResources(this.TextBoxRest, "TextBoxRest");
             this.TextBoxRest.Name = "TextBoxRest";
-            this.TextBoxRest.Size = new System.Drawing.Size(158, 36);
-            this.TextBoxRest.TabIndex = 5;
             this.TextBoxRest.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxObserved_KeyPress);
             // 
             // groupBoxVelocity
             // 
+            resources.ApplyResources(this.groupBoxVelocity, "groupBoxVelocity");
             this.groupBoxVelocity.Controls.Add(this.ButtonVelocity);
             this.groupBoxVelocity.Controls.Add(this.label5);
             this.groupBoxVelocity.Controls.Add(this.label1);
             this.groupBoxVelocity.Controls.Add(this.TextBoxObserved);
             this.groupBoxVelocity.Controls.Add(this.TextBoxRest);
-            this.groupBoxVelocity.Font = new System.Drawing.Font("Constantia", 13.8F);
-            this.groupBoxVelocity.Location = new System.Drawing.Point(24, 28);
             this.groupBoxVelocity.Name = "groupBoxVelocity";
-            this.groupBoxVelocity.Size = new System.Drawing.Size(430, 173);
-            this.groupBoxVelocity.TabIndex = 6;
             this.groupBoxVelocity.TabStop = false;
-            this.groupBoxVelocity.Text = "Star Velocity";
             // 
             // ButtonVelocity
             // 
-            this.ButtonVelocity.Location = new System.Drawing.Point(278, 116);
+            resources.ApplyResources(this.ButtonVelocity, "ButtonVelocity");
             this.ButtonVelocity.Name = "ButtonVelocity";
-            this.ButtonVelocity.Size = new System.Drawing.Size(135, 51);
-            this.ButtonVelocity.TabIndex = 9;
-            this.ButtonVelocity.Text = "Calculate";
             this.ButtonVelocity.UseVisualStyleBackColor = true;
             this.ButtonVelocity.Click += new System.EventHandler(this.ButtonVelocity_Click);
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(21, 104);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(171, 21);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Rest Wavelenght(nm)";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 40);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 21);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Observed Wavelenght(nm)";
             // 
             // groupBoxDistance
             // 
+            resources.ApplyResources(this.groupBoxDistance, "groupBoxDistance");
             this.groupBoxDistance.Controls.Add(this.ButtonStarDistance);
             this.groupBoxDistance.Controls.Add(this.label3);
             this.groupBoxDistance.Controls.Add(this.TextBoxParaAngle);
-            this.groupBoxDistance.Font = new System.Drawing.Font("Constantia", 13.8F);
-            this.groupBoxDistance.Location = new System.Drawing.Point(24, 246);
             this.groupBoxDistance.Name = "groupBoxDistance";
-            this.groupBoxDistance.Size = new System.Drawing.Size(430, 107);
-            this.groupBoxDistance.TabIndex = 7;
             this.groupBoxDistance.TabStop = false;
-            this.groupBoxDistance.Text = "Star Distance";
             // 
             // ButtonStarDistance
             // 
-            this.ButtonStarDistance.Location = new System.Drawing.Point(278, 49);
+            resources.ApplyResources(this.ButtonStarDistance, "ButtonStarDistance");
             this.ButtonStarDistance.Name = "ButtonStarDistance";
-            this.ButtonStarDistance.Size = new System.Drawing.Size(135, 51);
-            this.ButtonStarDistance.TabIndex = 9;
-            this.ButtonStarDistance.Text = "Calculate";
             this.ButtonStarDistance.UseVisualStyleBackColor = true;
             this.ButtonStarDistance.Click += new System.EventHandler(this.ButtonVelocity_Click);
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 38);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(210, 21);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Parallax Angle(arcseconds)";
             // 
             // TextBoxParaAngle
             // 
-            this.TextBoxParaAngle.Location = new System.Drawing.Point(34, 64);
+            resources.ApplyResources(this.TextBoxParaAngle, "TextBoxParaAngle");
             this.TextBoxParaAngle.Name = "TextBoxParaAngle";
-            this.TextBoxParaAngle.Size = new System.Drawing.Size(158, 36);
-            this.TextBoxParaAngle.TabIndex = 4;
             this.TextBoxParaAngle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxObserved_KeyPress);
             // 
             // groupBoxTemperature
             // 
+            resources.ApplyResources(this.groupBoxTemperature, "groupBoxTemperature");
             this.groupBoxTemperature.Controls.Add(this.UpDownPlusMinus);
             this.groupBoxTemperature.Controls.Add(this.ButtonKelvin);
             this.groupBoxTemperature.Controls.Add(this.labelCelsius);
             this.groupBoxTemperature.Controls.Add(this.TextBoxCelsius);
-            this.groupBoxTemperature.Font = new System.Drawing.Font("Constantia", 13.8F);
-            this.groupBoxTemperature.Location = new System.Drawing.Point(24, 403);
             this.groupBoxTemperature.Name = "groupBoxTemperature";
-            this.groupBoxTemperature.Size = new System.Drawing.Size(430, 108);
-            this.groupBoxTemperature.TabIndex = 8;
             this.groupBoxTemperature.TabStop = false;
-            this.groupBoxTemperature.Text = "Temperature in Kelvin";
             // 
             // UpDownPlusMinus
             // 
-            this.UpDownPlusMinus.Items.Add("+");
-            this.UpDownPlusMinus.Items.Add("-");
-            this.UpDownPlusMinus.Location = new System.Drawing.Point(6, 65);
+            resources.ApplyResources(this.UpDownPlusMinus, "UpDownPlusMinus");
+            this.UpDownPlusMinus.Items.Add(resources.GetString("UpDownPlusMinus.Items"));
+            this.UpDownPlusMinus.Items.Add(resources.GetString("UpDownPlusMinus.Items1"));
             this.UpDownPlusMinus.Name = "UpDownPlusMinus";
             this.UpDownPlusMinus.ReadOnly = true;
-            this.UpDownPlusMinus.Size = new System.Drawing.Size(48, 36);
-            this.UpDownPlusMinus.TabIndex = 10;
-            this.UpDownPlusMinus.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             // 
             // ButtonKelvin
             // 
-            this.ButtonKelvin.Location = new System.Drawing.Point(278, 50);
+            resources.ApplyResources(this.ButtonKelvin, "ButtonKelvin");
             this.ButtonKelvin.Name = "ButtonKelvin";
-            this.ButtonKelvin.Size = new System.Drawing.Size(135, 51);
-            this.ButtonKelvin.TabIndex = 9;
-            this.ButtonKelvin.Text = "Calculate";
             this.ButtonKelvin.UseVisualStyleBackColor = true;
             this.ButtonKelvin.Click += new System.EventHandler(this.ButtonVelocity_Click);
             // 
             // labelCelsius
             // 
-            this.labelCelsius.AutoSize = true;
-            this.labelCelsius.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCelsius.Location = new System.Drawing.Point(21, 38);
+            resources.ApplyResources(this.labelCelsius, "labelCelsius");
             this.labelCelsius.Name = "labelCelsius";
-            this.labelCelsius.Size = new System.Drawing.Size(140, 21);
-            this.labelCelsius.TabIndex = 6;
-            this.labelCelsius.Text = "Celsius(degree C)";
             // 
             // TextBoxCelsius
             // 
-            this.TextBoxCelsius.Location = new System.Drawing.Point(60, 64);
+            resources.ApplyResources(this.TextBoxCelsius, "TextBoxCelsius");
             this.TextBoxCelsius.Name = "TextBoxCelsius";
-            this.TextBoxCelsius.Size = new System.Drawing.Size(158, 36);
-            this.TextBoxCelsius.TabIndex = 4;
             this.TextBoxCelsius.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxObserved_KeyPress);
             // 
             // groupBoxHorizon
             // 
+            resources.ApplyResources(this.groupBoxHorizon, "groupBoxHorizon");
             this.groupBoxHorizon.Controls.Add(this.label2);
             this.groupBoxHorizon.Controls.Add(this.UpDownNotation);
             this.groupBoxHorizon.Controls.Add(this.ButtonSchRadius);
             this.groupBoxHorizon.Controls.Add(this.labelMass);
             this.groupBoxHorizon.Controls.Add(this.TextBoxMass);
-            this.groupBoxHorizon.Font = new System.Drawing.Font("Constantia", 13.8F);
-            this.groupBoxHorizon.Location = new System.Drawing.Point(24, 561);
             this.groupBoxHorizon.Name = "groupBoxHorizon";
-            this.groupBoxHorizon.Size = new System.Drawing.Size(430, 108);
-            this.groupBoxHorizon.TabIndex = 9;
             this.groupBoxHorizon.TabStop = false;
-            this.groupBoxHorizon.Text = "Event Horizon";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(174, 73);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 24);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "* 10";
             // 
             // UpDownNotation
             // 
-            this.UpDownNotation.Location = new System.Drawing.Point(194, 37);
+            resources.ApplyResources(this.UpDownNotation, "UpDownNotation");
             this.UpDownNotation.Minimum = new decimal(new int[] {
             30,
             0,
             0,
             -2147483648});
             this.UpDownNotation.Name = "UpDownNotation";
-            this.UpDownNotation.Size = new System.Drawing.Size(59, 36);
-            this.UpDownNotation.TabIndex = 10;
-            this.UpDownNotation.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.UpDownNotation.Value = new decimal(new int[] {
             1,
             0,
@@ -267,127 +204,94 @@
             // 
             // ButtonSchRadius
             // 
-            this.ButtonSchRadius.Location = new System.Drawing.Point(278, 50);
+            resources.ApplyResources(this.ButtonSchRadius, "ButtonSchRadius");
             this.ButtonSchRadius.Name = "ButtonSchRadius";
-            this.ButtonSchRadius.Size = new System.Drawing.Size(135, 51);
-            this.ButtonSchRadius.TabIndex = 9;
-            this.ButtonSchRadius.Text = "Calculate";
             this.ButtonSchRadius.UseVisualStyleBackColor = true;
             this.ButtonSchRadius.Click += new System.EventHandler(this.ButtonVelocity_Click);
             // 
             // labelMass
             // 
-            this.labelMass.AutoSize = true;
-            this.labelMass.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMass.Location = new System.Drawing.Point(21, 38);
+            resources.ApplyResources(this.labelMass, "labelMass");
             this.labelMass.Name = "labelMass";
-            this.labelMass.Size = new System.Drawing.Size(155, 21);
-            this.labelMass.TabIndex = 6;
-            this.labelMass.Text = "Blackhole Mass(Kg)";
             // 
             // TextBoxMass
             // 
-            this.TextBoxMass.Location = new System.Drawing.Point(34, 64);
+            resources.ApplyResources(this.TextBoxMass, "TextBoxMass");
             this.TextBoxMass.Name = "TextBoxMass";
-            this.TextBoxMass.Size = new System.Drawing.Size(142, 36);
-            this.TextBoxMass.TabIndex = 4;
             this.TextBoxMass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxObserved_KeyPress);
             // 
             // ListViewResults
             // 
+            resources.ApplyResources(this.ListViewResults, "ListViewResults");
             this.ListViewResults.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnVelocity,
             this.columnDistance,
             this.columnKelvin,
             this.columnHorizon});
-            this.ListViewResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListViewResults.HideSelection = false;
-            this.ListViewResults.Location = new System.Drawing.Point(479, 51);
-            this.ListViewResults.Margin = new System.Windows.Forms.Padding(4);
             this.ListViewResults.Name = "ListViewResults";
-            this.ListViewResults.Size = new System.Drawing.Size(728, 502);
-            this.ListViewResults.TabIndex = 31;
             this.ListViewResults.UseCompatibleStateImageBehavior = false;
             this.ListViewResults.View = System.Windows.Forms.View.Details;
             // 
             // columnVelocity
             // 
-            this.columnVelocity.Text = "Star Velocity (m/s)";
-            this.columnVelocity.Width = 170;
+            resources.ApplyResources(this.columnVelocity, "columnVelocity");
             // 
             // columnDistance
             // 
-            this.columnDistance.Text = "Star Distance (parsec)";
-            this.columnDistance.Width = 192;
+            resources.ApplyResources(this.columnDistance, "columnDistance");
             // 
             // columnKelvin
             // 
-            this.columnKelvin.Text = "Kelvin (K)";
-            this.columnKelvin.Width = 107;
+            resources.ApplyResources(this.columnKelvin, "columnKelvin");
             // 
             // columnHorizon
             // 
-            this.columnHorizon.Text = "Event horizon (metres)";
-            this.columnHorizon.Width = 199;
+            resources.ApplyResources(this.columnHorizon, "columnHorizon");
             // 
             // StatusStripInfo
             // 
+            resources.ApplyResources(this.StatusStripInfo, "StatusStripInfo");
             this.StatusStripInfo.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.StatusStripInfo.Location = new System.Drawing.Point(0, 675);
             this.StatusStripInfo.Name = "StatusStripInfo";
-            this.StatusStripInfo.Size = new System.Drawing.Size(1237, 22);
-            this.StatusStripInfo.TabIndex = 32;
-            this.StatusStripInfo.Text = "TestInfomation";
             // 
             // groupBoxFlag
             // 
+            resources.ApplyResources(this.groupBoxFlag, "groupBoxFlag");
             this.groupBoxFlag.Controls.Add(this.ButtonFrench);
             this.groupBoxFlag.Controls.Add(this.ButtonUK);
             this.groupBoxFlag.Controls.Add(this.ButtonGerman);
-            this.groupBoxFlag.Location = new System.Drawing.Point(508, 565);
             this.groupBoxFlag.Name = "groupBoxFlag";
-            this.groupBoxFlag.Size = new System.Drawing.Size(676, 93);
-            this.groupBoxFlag.TabIndex = 33;
             this.groupBoxFlag.TabStop = false;
             // 
             // ButtonFrench
             // 
+            resources.ApplyResources(this.ButtonFrench, "ButtonFrench");
             this.ButtonFrench.BackgroundImage = global::MalinAstrionics.Properties.Resources.france;
-            this.ButtonFrench.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ButtonFrench.Location = new System.Drawing.Point(281, 22);
             this.ButtonFrench.Name = "ButtonFrench";
-            this.ButtonFrench.Size = new System.Drawing.Size(120, 66);
-            this.ButtonFrench.TabIndex = 4;
             this.ButtonFrench.UseVisualStyleBackColor = true;
             this.ButtonFrench.Click += new System.EventHandler(this.ButtonUK_Click);
             // 
             // ButtonUK
             // 
+            resources.ApplyResources(this.ButtonUK, "ButtonUK");
             this.ButtonUK.BackgroundImage = global::MalinAstrionics.Properties.Resources.uk;
-            this.ButtonUK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ButtonUK.ImageIndex = 0;
-            this.ButtonUK.Location = new System.Drawing.Point(84, 21);
             this.ButtonUK.Name = "ButtonUK";
-            this.ButtonUK.Size = new System.Drawing.Size(120, 66);
-            this.ButtonUK.TabIndex = 3;
             this.ButtonUK.UseVisualStyleBackColor = true;
+            this.ButtonUK.Click += new System.EventHandler(this.ButtonUK_Click);
             // 
             // ButtonGerman
             // 
+            resources.ApplyResources(this.ButtonGerman, "ButtonGerman");
             this.ButtonGerman.BackgroundImage = global::MalinAstrionics.Properties.Resources.germanySQ;
-            this.ButtonGerman.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ButtonGerman.Location = new System.Drawing.Point(482, 21);
             this.ButtonGerman.Name = "ButtonGerman";
-            this.ButtonGerman.Size = new System.Drawing.Size(120, 66);
-            this.ButtonGerman.TabIndex = 2;
             this.ButtonGerman.UseVisualStyleBackColor = true;
             this.ButtonGerman.Click += new System.EventHandler(this.ButtonUK_Click);
             // 
             // MalinSpace
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1237, 697);
             this.Controls.Add(this.groupBoxFlag);
             this.Controls.Add(this.StatusStripInfo);
             this.Controls.Add(this.ListViewResults);
@@ -396,7 +300,6 @@
             this.Controls.Add(this.groupBoxDistance);
             this.Controls.Add(this.groupBoxVelocity);
             this.Name = "MalinSpace";
-            this.Text = "MalinSpace";
             this.Load += new System.EventHandler(this.MalinSpace_Load);
             this.groupBoxVelocity.ResumeLayout(false);
             this.groupBoxVelocity.PerformLayout();

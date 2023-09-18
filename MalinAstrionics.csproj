@@ -60,6 +60,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MalinSpace.de-DE.resx">
+      <DependentUpon>MalinSpace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MalinSpace.en-GB.resx">
+      <DependentUpon>MalinSpace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MalinSpace.fr-FR.resx">
+      <DependentUpon>MalinSpace.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MalinSpace.resx">
       <DependentUpon>MalinSpace.cs</DependentUpon>
     </EmbeddedResource>

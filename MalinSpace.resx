@@ -117,7 +117,769 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1237, 697</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="ButtonSchRadius.Text" xml:space="preserve">
+    <value>Calculate</value>
+  </data>
+  <data name="&gt;&gt;TextBoxCelsius.Name" xml:space="preserve">
+    <value>TextBoxCelsius</value>
+  </data>
+  <data name="UpDownNotation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 36</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>groupBoxDistance</value>
+  </data>
+  <data name="&gt;&gt;ButtonUK.Name" xml:space="preserve">
+    <value>ButtonUK</value>
+  </data>
+  <data name="&gt;&gt;ButtonVelocity.Name" xml:space="preserve">
+    <value>ButtonVelocity</value>
+  </data>
+  <data name="&gt;&gt;ButtonUK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxParaAngle.Parent" xml:space="preserve">
+    <value>groupBoxDistance</value>
+  </data>
+  <data name="&gt;&gt;groupBoxVelocity.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ButtonSchRadius.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Constantia, 10.2pt</value>
+  </data>
+  <data name="&gt;&gt;ButtonSchRadius.Parent" xml:space="preserve">
+    <value>groupBoxHorizon</value>
+  </data>
+  <data name="&gt;&gt;UpDownPlusMinus.Name" xml:space="preserve">
+    <value>UpDownPlusMinus</value>
+  </data>
+  <data name="labelMass.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ButtonGerman.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="ButtonUK.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;groupBoxVelocity.Name" xml:space="preserve">
+    <value>groupBoxVelocity</value>
+  </data>
+  <data name="&gt;&gt;columnHorizon.Name" xml:space="preserve">
+    <value>columnHorizon</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDistance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelMass.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Constantia, 10.2pt</value>
+  </data>
+  <data name="groupBoxHorizon.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="ButtonVelocity.Text" xml:space="preserve">
+    <value>Calculate</value>
+  </data>
+  <data name="UpDownNotation.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;TextBoxParaAngle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="labelMass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 38</value>
+  </data>
+  <data name="&gt;&gt;labelMass.Parent" xml:space="preserve">
+    <value>groupBoxHorizon</value>
+  </data>
+  <data name="ButtonKelvin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>278, 50</value>
+  </data>
+  <data name="columnHorizon.Text" xml:space="preserve">
+    <value>Event horizon (metres)</value>
+  </data>
+  <data name="&gt;&gt;TextBoxMass.Name" xml:space="preserve">
+    <value>TextBoxMass</value>
+  </data>
+  <data name="columnKelvin.Text" xml:space="preserve">
+    <value>Kelvin (K)</value>
+  </data>
+  <data name="ListViewResults.Location" type="System.Drawing.Point, System.Drawing">
+    <value>479, 51</value>
+  </data>
+  <data name="&gt;&gt;groupBoxHorizon.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ButtonKelvin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 51</value>
+  </data>
+  <data name="StatusStripInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1237, 22</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFlag.Name" xml:space="preserve">
+    <value>groupBoxFlag</value>
+  </data>
+  <data name="groupBoxHorizon.Text" xml:space="preserve">
+    <value>Event Horizon</value>
+  </data>
+  <data name="&gt;&gt;ButtonGerman.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;columnDistance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonFrench.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 21</value>
+  </data>
+  <data name="&gt;&gt;ButtonFrench.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Observed Wavelenght(nm)</value>
+  </data>
+  <data name="&gt;&gt;TextBoxObserved.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MalinSpace</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDistance.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="UpDownPlusMinus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 36</value>
+  </data>
+  <data name="&gt;&gt;columnDistance.Name" xml:space="preserve">
+    <value>columnDistance</value>
+  </data>
+  <data name="UpDownNotation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 37</value>
+  </data>
+  <data name="ListViewResults.Size" type="System.Drawing.Size, System.Drawing">
+    <value>728, 502</value>
+  </data>
+  <data name="&gt;&gt;ButtonVelocity.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TextBoxObserved.Parent" xml:space="preserve">
+    <value>groupBoxVelocity</value>
+  </data>
+  <data name="labelCelsius.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Constantia, 10.2pt</value>
+  </data>
+  <data name="groupBoxDistance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Constantia, 13.8pt</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTemperature.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UpDownPlusMinus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DomainUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonVelocity.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;columnVelocity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonKelvin.Name" xml:space="preserve">
+    <value>ButtonKelvin</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 38</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Parallax Angle(arcseconds)</value>
+  </data>
+  <data name="ButtonSchRadius.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 51</value>
+  </data>
+  <data name="&gt;&gt;ListViewResults.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelCelsius.Parent" xml:space="preserve">
+    <value>groupBoxTemperature</value>
+  </data>
+  <data name="&gt;&gt;TextBoxRest.Name" xml:space="preserve">
+    <value>TextBoxRest</value>
+  </data>
+  <data name="UpDownPlusMinus.Items" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="ButtonKelvin.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="columnKelvin.Width" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Constantia, 12pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="groupBoxHorizon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 561</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 21</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="labelCelsius.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ButtonStarDistance.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;StatusStripInfo.Name" xml:space="preserve">
+    <value>StatusStripInfo</value>
+  </data>
+  <data name="ButtonVelocity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 51</value>
+  </data>
+  <data name="&gt;&gt;columnKelvin.Name" xml:space="preserve">
+    <value>columnKelvin</value>
+  </data>
+  <data name="&gt;&gt;ButtonKelvin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="UpDownPlusMinus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 65</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>groupBoxVelocity</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFlag.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTemperature.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>MalinSpace</value>
+  </data>
+  <data name="ButtonKelvin.Text" xml:space="preserve">
+    <value>Calculate</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;StatusStripInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBoxVelocity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 173</value>
+  </data>
+  <data name="labelCelsius.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 21</value>
+  </data>
+  <data name="&gt;&gt;UpDownNotation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TextBoxObserved.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 36</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTemperature.Name" xml:space="preserve">
+    <value>groupBoxTemperature</value>
+  </data>
+  <data name="TextBoxMass.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;groupBoxVelocity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBoxVelocity.Text" xml:space="preserve">
+    <value>Star Velocity</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Constantia, 10.2pt</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="&gt;&gt;UpDownPlusMinus.Parent" xml:space="preserve">
+    <value>groupBoxTemperature</value>
+  </data>
+  <data name="labelMass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 21</value>
+  </data>
+  <data name="ButtonSchRadius.Location" type="System.Drawing.Point, System.Drawing">
+    <value>278, 50</value>
+  </data>
+  <data name="columnHorizon.Width" type="System.Int32, mscorlib">
+    <value>199</value>
+  </data>
+  <data name="groupBoxDistance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 107</value>
+  </data>
+  <data name="ListViewResults.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="TextBoxMass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 36</value>
+  </data>
+  <data name="&gt;&gt;TextBoxParaAngle.Name" xml:space="preserve">
+    <value>TextBoxParaAngle</value>
+  </data>
+  <data name="groupBoxTemperature.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="StatusStripInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 675</value>
+  </data>
+  <data name="&gt;&gt;ButtonFrench.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TextBoxObserved.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 62</value>
+  </data>
+  <data name="ButtonVelocity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>278, 116</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ButtonGerman.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBoxHorizon.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Constantia, 13.8pt</value>
+  </data>
+  <data name="ButtonStarDistance.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="ButtonGerman.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 66</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="StatusStripInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;TextBoxMass.Parent" xml:space="preserve">
+    <value>groupBoxHorizon</value>
+  </data>
+  <data name="columnVelocity.Width" type="System.Int32, mscorlib">
+    <value>170</value>
+  </data>
+  <data name="&gt;&gt;ButtonVelocity.Parent" xml:space="preserve">
+    <value>groupBoxVelocity</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>groupBoxVelocity</value>
+  </data>
+  <data name="&gt;&gt;TextBoxMass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxObserved.Name" xml:space="preserve">
+    <value>TextBoxObserved</value>
+  </data>
+  <data name="&gt;&gt;columnHorizon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="groupBoxDistance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 246</value>
+  </data>
+  <data name="groupBoxTemperature.Text" xml:space="preserve">
+    <value>Temperature in Kelvin</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFlag.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelCelsius.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="columnVelocity.Text" xml:space="preserve">
+    <value>Star Velocity (m/s)</value>
+  </data>
+  <data name="ButtonFrench.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="TextBoxRest.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;TextBoxParaAngle.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;TextBoxRest.Parent" xml:space="preserve">
+    <value>groupBoxVelocity</value>
+  </data>
+  <data name="&gt;&gt;ButtonSchRadius.Name" xml:space="preserve">
+    <value>ButtonSchRadius</value>
+  </data>
+  <data name="TextBoxMass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 64</value>
+  </data>
+  <data name="labelMass.Text" xml:space="preserve">
+    <value>Blackhole Mass(Kg)</value>
+  </data>
+  <data name="&gt;&gt;ButtonGerman.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelMass.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TextBoxCelsius.Parent" xml:space="preserve">
+    <value>groupBoxTemperature</value>
+  </data>
+  <data name="columnDistance.Text" xml:space="preserve">
+    <value>Star Distance (parsec)</value>
+  </data>
+  <data name="&gt;&gt;ButtonKelvin.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;UpDownNotation.Parent" xml:space="preserve">
+    <value>groupBoxHorizon</value>
+  </data>
+  <data name="groupBoxVelocity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 28</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 24</value>
+  </data>
+  <data name="&gt;&gt;StatusStripInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFlag.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;columnKelvin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelCelsius.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 38</value>
+  </data>
+  <data name="groupBoxFlag.Location" type="System.Drawing.Point, System.Drawing">
+    <value>508, 565</value>
+  </data>
+  <data name="&gt;&gt;UpDownNotation.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelCelsius.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxCelsius.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="TextBoxRest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 36</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBoxVelocity.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 40</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>groupBoxHorizon</value>
+  </data>
+  <data name="groupBoxTemperature.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Constantia, 13.8pt</value>
+  </data>
+  <data name="TextBoxParaAngle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 36</value>
+  </data>
+  <data name="TextBoxRest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 131</value>
+  </data>
+  <data name="ButtonGerman.Location" type="System.Drawing.Point, System.Drawing">
+    <value>482, 21</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 73</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="StatusStripInfo.Text" xml:space="preserve">
+    <value>TestInfomation</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 104</value>
+  </data>
+  <data name="ButtonFrench.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 22</value>
+  </data>
+  <data name="groupBoxDistance.Text" xml:space="preserve">
+    <value>Star Distance</value>
+  </data>
+  <data name="&gt;&gt;ListViewResults.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;TextBoxRest.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="groupBoxVelocity.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Constantia, 13.8pt</value>
+  </data>
+  <data name="&gt;&gt;ButtonUK.Parent" xml:space="preserve">
+    <value>groupBoxFlag</value>
+  </data>
+  <data name="UpDownPlusMinus.UpDownAlign" type="System.Windows.Forms.LeftRightAlignment, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="&gt;&gt;ListViewResults.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TextBoxCelsius.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="groupBoxFlag.Size" type="System.Drawing.Size, System.Drawing">
+    <value>676, 93</value>
+  </data>
+  <data name="&gt;&gt;ButtonSchRadius.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxMass.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="groupBoxTemperature.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 403</value>
+  </data>
+  <data name="&gt;&gt;TextBoxObserved.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TextBoxParaAngle.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;groupBoxHorizon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>* 10</value>
+  </data>
+  <data name="&gt;&gt;labelMass.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ListViewResults.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;groupBoxHorizon.Name" xml:space="preserve">
+    <value>groupBoxHorizon</value>
+  </data>
+  <data name="ButtonUK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 66</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDistance.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;ButtonFrench.Name" xml:space="preserve">
+    <value>ButtonFrench</value>
+  </data>
+  <data name="TextBoxCelsius.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 36</value>
+  </data>
+  <data name="&gt;&gt;TextBoxRest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonSchRadius.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="UpDownPlusMinus.Items1" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="&gt;&gt;groupBoxVelocity.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;ButtonGerman.Name" xml:space="preserve">
+    <value>ButtonGerman</value>
+  </data>
+  <data name="&gt;&gt;ButtonFrench.Parent" xml:space="preserve">
+    <value>groupBoxFlag</value>
+  </data>
+  <data name="groupBoxDistance.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="TextBoxCelsius.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 64</value>
+  </data>
+  <data name="ButtonUK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 21</value>
+  </data>
+  <data name="UpDownNotation.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;ButtonVelocity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonStarDistance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TextBoxParaAngle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 64</value>
+  </data>
+  <data name="&gt;&gt;ButtonStarDistance.Parent" xml:space="preserve">
+    <value>groupBoxDistance</value>
+  </data>
+  <data name="&gt;&gt;UpDownPlusMinus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Constantia, 10.2pt</value>
+  </data>
+  <data name="&gt;&gt;ButtonStarDistance.Name" xml:space="preserve">
+    <value>ButtonStarDistance</value>
+  </data>
+  <data name="groupBoxFlag.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;groupBoxHorizon.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ButtonUK.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDistance.Name" xml:space="preserve">
+    <value>groupBoxDistance</value>
+  </data>
+  <data name="&gt;&gt;ButtonKelvin.Parent" xml:space="preserve">
+    <value>groupBoxTemperature</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="columnDistance.Width" type="System.Int32, mscorlib">
+    <value>192</value>
+  </data>
+  <data name="&gt;&gt;labelMass.Name" xml:space="preserve">
+    <value>labelMass</value>
+  </data>
+  <data name="ButtonUK.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelCelsius.Name" xml:space="preserve">
+    <value>labelCelsius</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Rest Wavelenght(nm)</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="ButtonFrench.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 66</value>
+  </data>
+  <data name="TextBoxObserved.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="ButtonStarDistance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>278, 49</value>
+  </data>
+  <data name="&gt;&gt;columnVelocity.Name" xml:space="preserve">
+    <value>columnVelocity</value>
+  </data>
+  <data name="ButtonUK.ImageIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelCelsius.Text" xml:space="preserve">
+    <value>Celsius(degree C)</value>
+  </data>
+  <data name="&gt;&gt;TextBoxCelsius.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBoxHorizon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 108</value>
+  </data>
+  <data name="labelCelsius.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 21</value>
+  </data>
+  <data name="ButtonStarDistance.Text" xml:space="preserve">
+    <value>Calculate</value>
+  </data>
+  <data name="&gt;&gt;ListViewResults.Name" xml:space="preserve">
+    <value>ListViewResults</value>
+  </data>
+  <data name="ButtonStarDistance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 51</value>
+  </data>
+  <data name="ListViewResults.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
+  </data>
+  <data name="groupBoxTemperature.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 108</value>
+  </data>
+  <data name="UpDownPlusMinus.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTemperature.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ButtonGerman.Parent" xml:space="preserve">
+    <value>groupBoxFlag</value>
+  </data>
+  <data name="&gt;&gt;StatusStripInfo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;UpDownNotation.Name" xml:space="preserve">
+    <value>UpDownNotation</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="StatusStripInfo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en-GB</value>
   </metadata>
 </root>

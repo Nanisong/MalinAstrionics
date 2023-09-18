@@ -181,9 +181,8 @@ namespace MalinAstrionics
 
         private void ButtonUK_Click(object sender, EventArgs e)
         {
-            //Get the buttons name 
-            string flagName = ((Control)sender).Text;
-
+            //Get the buttons (UK, French, German) name 
+            string flagName = ((Control)sender).Name;
             
                 switch (flagName)
                 {
@@ -194,11 +193,13 @@ namespace MalinAstrionics
                         Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr-FR");
                         break;
                     case "ButtonGerman":
-                        Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("es-ES");
+                        Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("de-DE");
                         break;
                 }
                 Controls.Clear();
                 InitializeComponent();
         }
+
+
     }
 }
