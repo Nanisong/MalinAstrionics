@@ -161,69 +161,6 @@
   <data name="&gt;&gt;TextBoxRest.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;ButtonVelocity.Name" xml:space="preserve">
-    <value>ButtonVelocity</value>
-  </data>
-  <data name="&gt;&gt;ButtonVelocity.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ButtonVelocity.Parent" xml:space="preserve">
-    <value>groupBoxVelocity</value>
-  </data>
-  <data name="&gt;&gt;ButtonVelocity.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>groupBoxVelocity</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>groupBoxVelocity</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="groupBoxVelocity.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Constantia, 13.8pt</value>
-  </data>
-  <data name="groupBoxVelocity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 28</value>
-  </data>
-  <data name="groupBoxVelocity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>430, 173</value>
-  </data>
-  <data name="groupBoxVelocity.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="groupBoxVelocity.Text" xml:space="preserve">
-    <value>Star Velocity</value>
-  </data>
-  <data name="&gt;&gt;groupBoxVelocity.Name" xml:space="preserve">
-    <value>groupBoxVelocity</value>
-  </data>
-  <data name="&gt;&gt;groupBoxVelocity.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxVelocity.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBoxVelocity.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
   <data name="ButtonVelocity.Location" type="System.Drawing.Point, System.Drawing">
     <value>278, 116</value>
   </data>
@@ -308,68 +245,32 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;ButtonStarDistance.Name" xml:space="preserve">
-    <value>ButtonStarDistance</value>
-  </data>
-  <data name="&gt;&gt;ButtonStarDistance.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ButtonStarDistance.Parent" xml:space="preserve">
-    <value>groupBoxDistance</value>
-  </data>
-  <data name="&gt;&gt;ButtonStarDistance.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>groupBoxDistance</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;TextBoxParaAngle.Name" xml:space="preserve">
-    <value>TextBoxParaAngle</value>
-  </data>
-  <data name="&gt;&gt;TextBoxParaAngle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TextBoxParaAngle.Parent" xml:space="preserve">
-    <value>groupBoxDistance</value>
-  </data>
-  <data name="&gt;&gt;TextBoxParaAngle.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="groupBoxDistance.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="groupBoxVelocity.Font" type="System.Drawing.Font, System.Drawing">
     <value>Constantia, 13.8pt</value>
   </data>
-  <data name="groupBoxDistance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 246</value>
+  <data name="groupBoxVelocity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 28</value>
   </data>
-  <data name="groupBoxDistance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>430, 107</value>
+  <data name="groupBoxVelocity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 173</value>
   </data>
-  <data name="groupBoxDistance.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="groupBoxVelocity.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="groupBoxDistance.Text" xml:space="preserve">
-    <value>Star Distance</value>
+  <data name="groupBoxVelocity.Text" xml:space="preserve">
+    <value>Star Velocity</value>
   </data>
-  <data name="&gt;&gt;groupBoxDistance.Name" xml:space="preserve">
-    <value>groupBoxDistance</value>
+  <data name="&gt;&gt;groupBoxVelocity.Name" xml:space="preserve">
+    <value>groupBoxVelocity</value>
   </data>
-  <data name="&gt;&gt;groupBoxDistance.Type" xml:space="preserve">
+  <data name="&gt;&gt;groupBoxVelocity.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBoxDistance.Parent" xml:space="preserve">
+  <data name="&gt;&gt;groupBoxVelocity.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupBoxDistance.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;groupBoxVelocity.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="ButtonStarDistance.Location" type="System.Drawing.Point, System.Drawing">
     <value>278, 49</value>
@@ -445,6 +346,33 @@
   </data>
   <data name="&gt;&gt;TextBoxParaAngle.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="groupBoxDistance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Constantia, 13.8pt</value>
+  </data>
+  <data name="groupBoxDistance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 246</value>
+  </data>
+  <data name="groupBoxDistance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 107</value>
+  </data>
+  <data name="groupBoxDistance.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="groupBoxDistance.Text" xml:space="preserve">
+    <value>Star Distance</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDistance.Name" xml:space="preserve">
+    <value>groupBoxDistance</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDistance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDistance.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDistance.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="UpDownPlusMinus.Items" xml:space="preserve">
     <value>+</value>
@@ -582,93 +510,6 @@
   <data name="&gt;&gt;groupBoxTemperature.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>groupBoxHorizon</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;UpDownNotation.Name" xml:space="preserve">
-    <value>UpDownNotation</value>
-  </data>
-  <data name="&gt;&gt;UpDownNotation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UpDownNotation.Parent" xml:space="preserve">
-    <value>groupBoxHorizon</value>
-  </data>
-  <data name="&gt;&gt;UpDownNotation.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;ButtonSchRadius.Name" xml:space="preserve">
-    <value>ButtonSchRadius</value>
-  </data>
-  <data name="&gt;&gt;ButtonSchRadius.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ButtonSchRadius.Parent" xml:space="preserve">
-    <value>groupBoxHorizon</value>
-  </data>
-  <data name="&gt;&gt;ButtonSchRadius.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;labelMass.Name" xml:space="preserve">
-    <value>labelMass</value>
-  </data>
-  <data name="&gt;&gt;labelMass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelMass.Parent" xml:space="preserve">
-    <value>groupBoxHorizon</value>
-  </data>
-  <data name="&gt;&gt;labelMass.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;TextBoxMass.Name" xml:space="preserve">
-    <value>TextBoxMass</value>
-  </data>
-  <data name="&gt;&gt;TextBoxMass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TextBoxMass.Parent" xml:space="preserve">
-    <value>groupBoxHorizon</value>
-  </data>
-  <data name="&gt;&gt;TextBoxMass.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="groupBoxHorizon.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Constantia, 13.8pt</value>
-  </data>
-  <data name="groupBoxHorizon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 561</value>
-  </data>
-  <data name="groupBoxHorizon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>430, 108</value>
-  </data>
-  <data name="groupBoxHorizon.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="groupBoxHorizon.Text" xml:space="preserve">
-    <value>Event Horizon</value>
-  </data>
-  <data name="&gt;&gt;groupBoxHorizon.Name" xml:space="preserve">
-    <value>groupBoxHorizon</value>
-  </data>
-  <data name="&gt;&gt;groupBoxHorizon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxHorizon.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBoxHorizon.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -798,6 +639,57 @@
   <data name="&gt;&gt;TextBoxMass.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="groupBoxHorizon.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Constantia, 13.8pt</value>
+  </data>
+  <data name="groupBoxHorizon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 561</value>
+  </data>
+  <data name="groupBoxHorizon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 108</value>
+  </data>
+  <data name="groupBoxHorizon.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="groupBoxHorizon.Text" xml:space="preserve">
+    <value>Event Horizon</value>
+  </data>
+  <data name="&gt;&gt;groupBoxHorizon.Name" xml:space="preserve">
+    <value>groupBoxHorizon</value>
+  </data>
+  <data name="&gt;&gt;groupBoxHorizon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxHorizon.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxHorizon.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="columnVelocity.Text" xml:space="preserve">
+    <value>Star Velocity (m/s)</value>
+  </data>
+  <data name="columnVelocity.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="columnDistance.Text" xml:space="preserve">
+    <value>Star Distance (parsec)</value>
+  </data>
+  <data name="columnDistance.Width" type="System.Int32, mscorlib">
+    <value>163</value>
+  </data>
+  <data name="columnKelvin.Text" xml:space="preserve">
+    <value>Kelvin (K)</value>
+  </data>
+  <data name="columnKelvin.Width" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="columnHorizon.Text" xml:space="preserve">
+    <value>Event horizon (metres)</value>
+  </data>
+  <data name="columnHorizon.Width" type="System.Int32, mscorlib">
+    <value>165</value>
+  </data>
   <data name="ListViewResults.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 7.8pt</value>
   </data>
@@ -825,30 +717,6 @@
   <data name="&gt;&gt;ListViewResults.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="columnVelocity.Text" xml:space="preserve">
-    <value>Star Velocity (m/s)</value>
-  </data>
-  <data name="columnVelocity.Width" type="System.Int32, mscorlib">
-    <value>140</value>
-  </data>
-  <data name="columnDistance.Text" xml:space="preserve">
-    <value>Star Distance (parsec)</value>
-  </data>
-  <data name="columnDistance.Width" type="System.Int32, mscorlib">
-    <value>163</value>
-  </data>
-  <data name="columnKelvin.Text" xml:space="preserve">
-    <value>Kelvin (K)</value>
-  </data>
-  <data name="columnKelvin.Width" type="System.Int32, mscorlib">
-    <value>92</value>
-  </data>
-  <data name="columnHorizon.Text" xml:space="preserve">
-    <value>Event horizon (metres)</value>
-  </data>
-  <data name="columnHorizon.Width" type="System.Int32, mscorlib">
-    <value>165</value>
-  </data>
   <metadata name="StatusStripInfo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -875,63 +743,6 @@
   </data>
   <data name="&gt;&gt;StatusStripInfo.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;ButtonFrench.Name" xml:space="preserve">
-    <value>ButtonFrench</value>
-  </data>
-  <data name="&gt;&gt;ButtonFrench.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ButtonFrench.Parent" xml:space="preserve">
-    <value>groupBoxFlag</value>
-  </data>
-  <data name="&gt;&gt;ButtonFrench.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ButtonUK.Name" xml:space="preserve">
-    <value>ButtonUK</value>
-  </data>
-  <data name="&gt;&gt;ButtonUK.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ButtonUK.Parent" xml:space="preserve">
-    <value>groupBoxFlag</value>
-  </data>
-  <data name="&gt;&gt;ButtonUK.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;ButtonGerman.Name" xml:space="preserve">
-    <value>ButtonGerman</value>
-  </data>
-  <data name="&gt;&gt;ButtonGerman.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ButtonGerman.Parent" xml:space="preserve">
-    <value>groupBoxFlag</value>
-  </data>
-  <data name="&gt;&gt;ButtonGerman.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="groupBoxFlag.Location" type="System.Drawing.Point, System.Drawing">
-    <value>508, 565</value>
-  </data>
-  <data name="groupBoxFlag.Size" type="System.Drawing.Size, System.Drawing">
-    <value>676, 93</value>
-  </data>
-  <data name="groupBoxFlag.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;groupBoxFlag.Name" xml:space="preserve">
-    <value>groupBoxFlag</value>
-  </data>
-  <data name="&gt;&gt;groupBoxFlag.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxFlag.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBoxFlag.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="ButtonFrench.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -1008,14 +819,71 @@
   <data name="&gt;&gt;ButtonGerman.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="groupBoxFlag.Location" type="System.Drawing.Point, System.Drawing">
+    <value>508, 565</value>
+  </data>
+  <data name="groupBoxFlag.Size" type="System.Drawing.Size, System.Drawing">
+    <value>676, 93</value>
+  </data>
+  <data name="groupBoxFlag.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFlag.Name" xml:space="preserve">
+    <value>groupBoxFlag</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFlag.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFlag.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFlag.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>174, 17</value>
   </metadata>
+  <data name="DayToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="DayToolStripMenuItem.Text" xml:space="preserve">
+    <value>Day </value>
+  </data>
+  <data name="NightToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="NightToolStripMenuItem.Text" xml:space="preserve">
+    <value>Night</value>
+  </data>
+  <data name="OriginalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="OriginalToolStripMenuItem.Text" xml:space="preserve">
+    <value>Original</value>
+  </data>
+  <data name="modeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="modeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mode</value>
+  </data>
+  <data name="ColourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="ColourToolStripMenuItem.Text" xml:space="preserve">
+    <value>Colour</value>
+  </data>
+  <data name="styleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 24</value>
+  </data>
+  <data name="styleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Style</value>
+  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1237, 30</value>
+    <value>1237, 28</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -1034,48 +902,6 @@
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="styleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 26</value>
-  </data>
-  <data name="styleToolStripMenuItem.Text" xml:space="preserve">
-    <value>Style</value>
-  </data>
-  <data name="modeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 26</value>
-  </data>
-  <data name="modeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Mode</value>
-  </data>
-  <data name="dayToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 26</value>
-  </data>
-  <data name="dayToolStripMenuItem.Text" xml:space="preserve">
-    <value>Day </value>
-  </data>
-  <data name="nightToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 26</value>
-  </data>
-  <data name="nightToolStripMenuItem.Text" xml:space="preserve">
-    <value>Night</value>
-  </data>
-  <data name="colourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 26</value>
-  </data>
-  <data name="colourToolStripMenuItem.Text" xml:space="preserve">
-    <value>Colour</value>
-  </data>
-  <data name="formToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 26</value>
-  </data>
-  <data name="formToolStripMenuItem.Text" xml:space="preserve">
-    <value>Form</value>
-  </data>
-  <data name="buttonsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 26</value>
-  </data>
-  <data name="buttonsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Buttons</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1125,34 +951,28 @@
   <data name="&gt;&gt;modeToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dayToolStripMenuItem.Name" xml:space="preserve">
-    <value>dayToolStripMenuItem</value>
+  <data name="&gt;&gt;DayToolStripMenuItem.Name" xml:space="preserve">
+    <value>DayToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;dayToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;DayToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;nightToolStripMenuItem.Name" xml:space="preserve">
-    <value>nightToolStripMenuItem</value>
+  <data name="&gt;&gt;NightToolStripMenuItem.Name" xml:space="preserve">
+    <value>NightToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;nightToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;NightToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;colourToolStripMenuItem.Name" xml:space="preserve">
-    <value>colourToolStripMenuItem</value>
+  <data name="&gt;&gt;ColourToolStripMenuItem.Name" xml:space="preserve">
+    <value>ColourToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;colourToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;ColourToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;formToolStripMenuItem.Name" xml:space="preserve">
-    <value>formToolStripMenuItem</value>
+  <data name="&gt;&gt;OriginalToolStripMenuItem.Name" xml:space="preserve">
+    <value>OriginalToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;formToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonsToolStripMenuItem.Name" xml:space="preserve">
-    <value>buttonsToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;buttonsToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;OriginalToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

@@ -63,11 +63,10 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.styleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.colourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.formToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.buttonsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ColourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.OriginalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBoxVelocity.SuspendLayout();
             this.groupBoxDistance.SuspendLayout();
             this.groupBoxTemperature.SuspendLayout();
@@ -309,45 +308,42 @@
             // 
             this.styleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.modeToolStripMenuItem,
-            this.colourToolStripMenuItem});
+            this.ColourToolStripMenuItem});
             this.styleToolStripMenuItem.Name = "styleToolStripMenuItem";
             resources.ApplyResources(this.styleToolStripMenuItem, "styleToolStripMenuItem");
             // 
             // modeToolStripMenuItem
             // 
             this.modeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dayToolStripMenuItem,
-            this.nightToolStripMenuItem});
+            this.DayToolStripMenuItem,
+            this.NightToolStripMenuItem,
+            this.OriginalToolStripMenuItem});
             this.modeToolStripMenuItem.Name = "modeToolStripMenuItem";
             resources.ApplyResources(this.modeToolStripMenuItem, "modeToolStripMenuItem");
             // 
-            // dayToolStripMenuItem
+            // DayToolStripMenuItem
             // 
-            this.dayToolStripMenuItem.Name = "dayToolStripMenuItem";
-            resources.ApplyResources(this.dayToolStripMenuItem, "dayToolStripMenuItem");
+            this.DayToolStripMenuItem.Name = "DayToolStripMenuItem";
+            resources.ApplyResources(this.DayToolStripMenuItem, "DayToolStripMenuItem");
+            this.DayToolStripMenuItem.Click += new System.EventHandler(this.DayToolStripMenuItem_Click);
             // 
-            // nightToolStripMenuItem
+            // NightToolStripMenuItem
             // 
-            this.nightToolStripMenuItem.Name = "nightToolStripMenuItem";
-            resources.ApplyResources(this.nightToolStripMenuItem, "nightToolStripMenuItem");
+            this.NightToolStripMenuItem.Name = "NightToolStripMenuItem";
+            resources.ApplyResources(this.NightToolStripMenuItem, "NightToolStripMenuItem");
+            this.NightToolStripMenuItem.Click += new System.EventHandler(this.NightToolStripMenuItem_Click);
             // 
-            // colourToolStripMenuItem
+            // ColourToolStripMenuItem
             // 
-            this.colourToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.formToolStripMenuItem,
-            this.buttonsToolStripMenuItem});
-            this.colourToolStripMenuItem.Name = "colourToolStripMenuItem";
-            resources.ApplyResources(this.colourToolStripMenuItem, "colourToolStripMenuItem");
+            this.ColourToolStripMenuItem.Name = "ColourToolStripMenuItem";
+            resources.ApplyResources(this.ColourToolStripMenuItem, "ColourToolStripMenuItem");
+            this.ColourToolStripMenuItem.Click += new System.EventHandler(this.ColourToolStripMenuItem_Click);
             // 
-            // formToolStripMenuItem
+            // OriginalToolStripMenuItem
             // 
-            this.formToolStripMenuItem.Name = "formToolStripMenuItem";
-            resources.ApplyResources(this.formToolStripMenuItem, "formToolStripMenuItem");
-            // 
-            // buttonsToolStripMenuItem
-            // 
-            this.buttonsToolStripMenuItem.Name = "buttonsToolStripMenuItem";
-            resources.ApplyResources(this.buttonsToolStripMenuItem, "buttonsToolStripMenuItem");
+            this.OriginalToolStripMenuItem.Name = "OriginalToolStripMenuItem";
+            resources.ApplyResources(this.OriginalToolStripMenuItem, "OriginalToolStripMenuItem");
+            this.OriginalToolStripMenuItem.Click += new System.EventHandler(this.OriginalToolStripMenuItem_Click);
             // 
             // MalinSpace
             // 
@@ -416,10 +412,9 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem styleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem colourToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dayToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nightToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem formToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem buttonsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ColourToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem DayToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem NightToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem OriginalToolStripMenuItem;
     }
 }

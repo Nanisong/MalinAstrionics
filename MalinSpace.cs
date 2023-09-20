@@ -14,6 +14,8 @@ using System.Threading.Tasks;
 using System.Web.UI.WebControls;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Button = System.Windows.Forms.Button;
+using TextBox = System.Windows.Forms.TextBox;
 
 namespace MalinAstrionics
 {
@@ -161,25 +163,25 @@ namespace MalinAstrionics
         {
             string text = ((Control)sender).Text;
             if (!IsNumber(e.KeyChar, text))
+            {
                 e.Handled = true;
+            }
         }
-
         private bool IsNumber(char ch, string text)
         {
             bool res = true;
             char decimalChar = Convert.ToChar(CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator);
-
             //check if it´s a decimal separator and if doesn´t already have one in the text string
             if (ch == decimalChar && text.IndexOf(decimalChar) != -1)
             {
                 res = false;
                 return res;
             }
-
             //check if it´s a digit, decimal separator and backspace
             if (!Char.IsDigit(ch) && ch != decimalChar && ch != (char)Keys.Back)
+            {
                 res = false;
-
+            }
             return res;
         }
 
@@ -189,12 +191,10 @@ namespace MalinAstrionics
             UpDownPlusMinus.SelectedIndex = 1;
         }
 
-
         private void ButtonUK_Click(object sender, EventArgs e)
         {
             //Get the buttons (UK, French, German) name 
             string flagName = ((Control)sender).Name;
-            
                 switch (flagName)
                 {
                     case "ButtonUK":
@@ -211,6 +211,55 @@ namespace MalinAstrionics
                 InitializeComponent();
         }
 
+        private void DayToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BackgroundImage = null;
+            BackColor = Color.LightGray;
+            ForeColor = Color.FromArgb(25, 42, 86);
+            foreach (var groupBox in Controls.OfType<GroupBox>())
+            {
+                groupBox.ForeColor = Color.FromArgb(25, 42, 86);   //Blue
+            }
+            ListViewResults.BackColor = Color.FromArgb(247, 241, 227);
+        }
+        private void NightToolStripMenuItem_Click(object sender, EventArgs e)
+        {   
+            this.ForeColor = Color.FromArgb(245, 246, 250);
+            this.BackColor = Color.FromArgb(47, 54, 64);
+            
+            foreach (var groupBox in Controls.OfType<GroupBox>())
+            {
+                groupBox.ForeColor = Color.FromArgb(72, 52, 212);   //Blue
+            }
+            ListViewResults.BackColor = Color.FromArgb(164, 176, 190);
+        }
 
+        private void OriginalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.ForeColor = default(Color);
+            this.BackColor = default(Color);
+            foreach (var groupBox in Controls.OfType<GroupBox>())
+            {
+                groupBox.ForeColor = default(Color);
+            }
+            ListViewResults.BackColor = default(Color);
+        }
+
+        private void ColourToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorDlg = new ColorDialog();
+            if (colorDlg.ShowDialog() == DialogResult.OK)
+            {
+                BackColor = colorDlg.Color;
+                byte r = (byte)(255 - BackColor.R);
+                byte g = (byte)(255 - BackColor.G);
+                byte b = (byte)(255 - BackColor.B);
+                ForeColor = Color.FromArgb(r, g, b);
+                foreach (var textBox in Controls.OfType<TextBox>())
+                {
+                    textBox.ForeColor = Color.FromArgb(r, g, b);
+                }
+            }
+        }
     }
 }
