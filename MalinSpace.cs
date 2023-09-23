@@ -31,7 +31,8 @@ namespace MalinAstrionics
             Trace.WriteLine(Environment.NewLine);
             Trace.TraceInformation(timeNow + " MalinClient loaded.");
         }
-        
+        StatusBar statusBar = new StatusBar();
+        StatusBarPanel statusPanel = new StatusBarPanel();
         private void ButtonVelocity_Click(object sender, EventArgs e)
         {
             try
@@ -45,35 +46,45 @@ namespace MalinAstrionics
                 string velocity = "";
                 string distance = "";
                 string kelvin = "";
-                string horizon = ""; 
-                if (!string.IsNullOrEmpty(TextBoxObserved.Text) && !string.IsNullOrEmpty(TextBoxRest.Text))
+                string horizon = "";
+                if (double.Parse(UpDownPlusMinus.Text + TextBoxCelsius.Text) < -273)
                 {
-                    double observed = double.Parse(TextBoxObserved.Text);
-                    double rest = double.Parse(TextBoxRest.Text);
-                    velocity = pipeProxy.GetStarVelocity(observed, rest).ToString("F2"); //Keep 2 digits after decimal point
+                    SetMessage("Invalid temperature.", "warning");
+                    //toolStripStatusInfo.Text = "Invalid temperature.";
+                    //toolStripStatusInfo.ForeColor = Color.Red;
+                    //StatusbarTimer();
                 }
-                if (!string.IsNullOrEmpty(TextBoxParaAngle.Text))
+                else
                 {
-                    double angle = double.Parse(TextBoxParaAngle.Text);
-                    distance = pipeProxy.GetStarDistance(angle).ToString("F4"); //Keep 4 digits after decimal point
+                    if (!string.IsNullOrEmpty(TextBoxObserved.Text) && !string.IsNullOrEmpty(TextBoxRest.Text))
+                    {
+                        double observed = double.Parse(TextBoxObserved.Text);
+                        double rest = double.Parse(TextBoxRest.Text);
+                        velocity = pipeProxy.GetStarVelocity(observed, rest).ToString("F2"); //Keep 2 digits after decimal point
+                    }
+                    if (!string.IsNullOrEmpty(TextBoxParaAngle.Text))
+                    {
+                        double angle = double.Parse(TextBoxParaAngle.Text);
+                        distance = pipeProxy.GetStarDistance(angle).ToString("F4"); //Keep 4 digits after decimal point
+                    }
+                    if (!string.IsNullOrEmpty(TextBoxCelsius.Text))
+                    {
+                        double celsius = double.Parse(UpDownPlusMinus.Text + TextBoxCelsius.Text);
+                        kelvin = pipeProxy.GetTempKelvin(celsius).ToString();
+                    }
+                    if (!string.IsNullOrEmpty(TextBoxMass.Text))
+                    {
+                        double mass = double.Parse(TextBoxMass.Text + "E" + UpDownNotation.Value.ToString());
+                        horizon = pipeProxy.GetSchRadius(mass).ToString("E1");  // kepp 1 decimal place
+                    }
+                    string[] row = { distance, kelvin, horizon };   //Prepare row with results
+                    ListViewResults.Items.Add(velocity.ToString()).SubItems.AddRange(row);  //Add the row to listView
+                    ResetInputs();  //ResetInputs
                 }
-                if (!string.IsNullOrEmpty(TextBoxCelsius.Text))
-                {
-                    double celsius = double.Parse(UpDownPlusMinus.Text + TextBoxCelsius.Text);
-                    kelvin = pipeProxy.GetTempKelvin(celsius).ToString();
-                }
-                if (!string.IsNullOrEmpty(TextBoxMass.Text))
-                {
-                    double mass = double.Parse(TextBoxMass.Text + "E" + UpDownNotation.Value.ToString());
-                    horizon = pipeProxy.GetSchRadius(mass).ToString("E1");  // kepp 1 decimal place
-                }
-                string[] row = { distance, kelvin, horizon };
-                ListViewResults.Items.Add(velocity.ToString()).SubItems.AddRange(row);
-                ResetInputs();  //ResetInputs
-            }
-            catch (ActionNotSupportedException ex)
+            }   //Catch all the exceptions with communication errors.
+            catch (ActionNotSupportedException ex)  
             {
-                Trace.WriteLine(ex.Message);
+                Trace.WriteLine(ex.Message);    
             }
             catch (AddressAlreadyInUseException ex)
             {   
@@ -147,6 +158,39 @@ namespace MalinAstrionics
             {
                 Trace.WriteLine(ex.Message);
             }
+        }
+        /// <summary>
+        /// Set StatuBar Message
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="mode">Default:Red Info:Blue</param>
+        private void SetMessage(string message, string mode)
+        {
+            toolStripStatusInfo.Text = message;
+            System.Drawing.Color color = System.Drawing.Color.Red;
+            if (mode == "info")
+            { 
+                color = System.Drawing.Color.Blue;
+            }
+            toolStripStatusInfo.BackColor = color;
+            //toolStripStatusInfo.Font.Size = 
+            StatusbarTimer();
+        }
+        private void StatusbarTimer()
+        {
+            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer
+            {
+                Interval = 5000 //5 seconds
+            };
+            //timer.Enabled = true;
+            timer.Tick += OnTickEvent; // Add an event handler
+            //timer1.Tick += new System.EventHandler(OnTimerEvent);
+            timer.Start(); // Start the timer
+            
+        }
+        private void OnTickEvent(object sender, EventArgs e)
+        {
+            toolStripStatusInfo.Text = string.Empty;
         }
         //Reset Inputs
         private void ResetInputs()
@@ -261,5 +305,6 @@ namespace MalinAstrionics
                 }
             }
         }
+        
     }
 }

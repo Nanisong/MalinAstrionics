@@ -717,33 +717,6 @@
   <data name="&gt;&gt;ListViewResults.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <metadata name="StatusStripInfo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="StatusStripInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 675</value>
-  </data>
-  <data name="StatusStripInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1237, 22</value>
-  </data>
-  <data name="StatusStripInfo.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="StatusStripInfo.Text" xml:space="preserve">
-    <value>TestInfomation</value>
-  </data>
-  <data name="&gt;&gt;StatusStripInfo.Name" xml:space="preserve">
-    <value>StatusStripInfo</value>
-  </data>
-  <data name="&gt;&gt;StatusStripInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;StatusStripInfo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;StatusStripInfo.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="ButtonFrench.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -838,43 +811,43 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBoxFlag.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>174, 17</value>
   </metadata>
   <data name="DayToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>145, 26</value>
   </data>
   <data name="DayToolStripMenuItem.Text" xml:space="preserve">
     <value>Day </value>
   </data>
   <data name="NightToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>145, 26</value>
   </data>
   <data name="NightToolStripMenuItem.Text" xml:space="preserve">
     <value>Night</value>
   </data>
   <data name="OriginalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>145, 26</value>
   </data>
   <data name="OriginalToolStripMenuItem.Text" xml:space="preserve">
     <value>Original</value>
   </data>
   <data name="modeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>136, 26</value>
   </data>
   <data name="modeToolStripMenuItem.Text" xml:space="preserve">
     <value>Mode</value>
   </data>
   <data name="ColourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>136, 26</value>
   </data>
   <data name="ColourToolStripMenuItem.Text" xml:space="preserve">
     <value>Colour</value>
   </data>
   <data name="styleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 24</value>
+    <value>55, 26</value>
   </data>
   <data name="styleToolStripMenuItem.Text" xml:space="preserve">
     <value>Style</value>
@@ -883,7 +856,7 @@
     <value>0, 0</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1237, 28</value>
+    <value>1237, 30</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -902,6 +875,39 @@
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>309, 17</value>
+  </metadata>
+  <data name="toolStripStatusInfo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt, style=Bold</value>
+  </data>
+  <data name="toolStripStatusInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 18</value>
+  </data>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 673</value>
+  </data>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1237, 24</value>
+  </data>
+  <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -963,17 +969,23 @@
   <data name="&gt;&gt;NightToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;OriginalToolStripMenuItem.Name" xml:space="preserve">
+    <value>OriginalToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;OriginalToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;ColourToolStripMenuItem.Name" xml:space="preserve">
     <value>ColourToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;ColourToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;OriginalToolStripMenuItem.Name" xml:space="preserve">
-    <value>OriginalToolStripMenuItem</value>
+  <data name="&gt;&gt;toolStripStatusInfo.Name" xml:space="preserve">
+    <value>toolStripStatusInfo</value>
   </data>
-  <data name="&gt;&gt;OriginalToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;toolStripStatusInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MalinSpace</value>
