@@ -7,16 +7,11 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.ServiceModel;
-using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading;
-using System.Threading.Tasks;
-using System.Web.UI.WebControls;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using Button = System.Windows.Forms.Button;
 using TextBox = System.Windows.Forms.TextBox;
 
+//Author: Lan Song ID:30072745 26/9/2023 Murdoch
 namespace MalinAstrionics
 {
     public partial class MalinSpace : Form
@@ -24,15 +19,13 @@ namespace MalinAstrionics
         public MalinSpace()
         {
             InitializeComponent();
-
             //TraceInformation
             string timeNow = DateTime.Now.ToString();
             //Start Trace with empty new line
             Trace.WriteLine(Environment.NewLine);
             Trace.TraceInformation(timeNow + " MalinClient loaded.");
         }
-        StatusBar statusBar = new StatusBar();
-        StatusBarPanel statusPanel = new StatusBarPanel();
+        #region Main Events
         private void ButtonVelocity_Click(object sender, EventArgs e)
         {
             try
@@ -47,154 +40,172 @@ namespace MalinAstrionics
                 string distance = "";
                 string kelvin = "";
                 string horizon = "";
-                if (double.Parse(UpDownPlusMinus.Text + TextBoxCelsius.Text) < -273)
+                if (IsValidMayEmptyCelsius())
                 {
-                    SetMessage("Invalid temperature.", "warning");
-                    //toolStripStatusInfo.Text = "Invalid temperature.";
-                    //toolStripStatusInfo.ForeColor = Color.Red;
-                    //StatusbarTimer();
+                    //Redo 
+                    if (string.IsNullOrEmpty(TextBoxObserved.Text) && string.IsNullOrEmpty(distance)
+                       && string.IsNullOrEmpty(kelvin) && string.IsNullOrEmpty(horizon))
+                    {
+                        SetMessage("NO Input.", "warning");
+                    }
+                    else
+                    {
+                        //Calculate Star velocity
+                        if (!string.IsNullOrEmpty(TextBoxObserved.Text) && !string.IsNullOrEmpty(TextBoxRest.Text))
+                        {
+                            double observed = double.Parse(TextBoxObserved.Text);
+                            double rest = double.Parse(TextBoxRest.Text);
+                            velocity = pipeProxy.GetStarVelocity(observed, rest).ToString("F2"); //Keep 2 digits after decimal point
+                        }
+                        //Calculate Star distance
+                        if (!string.IsNullOrEmpty(TextBoxParaAngle.Text))
+                        {
+                            double angle = double.Parse(TextBoxParaAngle.Text);
+                            distance = pipeProxy.GetStarDistance(angle).ToString("F4"); //Keep 4 digits after decimal point
+                        }
+                        //Celcius to Kelvin
+                        if (!string.IsNullOrEmpty(TextBoxMass.Text))
+                        {
+                            double celsius = double.Parse(UpDownPlusMinus.Text + TextBoxCelsius.Text);
+                            kelvin = pipeProxy.GetTempKelvin(celsius).ToString();
+                        }
+                        //Calculate Event horizon
+                        if (!string.IsNullOrEmpty(TextBoxMass.Text))
+                        {
+                            double mass = double.Parse(TextBoxMass.Text + "E" + UpDownNotation.Value.ToString());
+                            horizon = pipeProxy.GetSchRadius(mass).ToString("E1");  // kepp 1 decimal place
+                        }
+                        //Populate the results in ListView
+                        string[] row = { distance, kelvin, horizon };   //Prepare row with results
+                        ListViewResults.Items.Add(velocity.ToString()).SubItems.AddRange(row);  //Add the row to listView
+                        ResetInputs();  //ResetInputs
+                    }
                 }
-                else
-                {
-                    if (!string.IsNullOrEmpty(TextBoxObserved.Text) && !string.IsNullOrEmpty(TextBoxRest.Text))
-                    {
-                        double observed = double.Parse(TextBoxObserved.Text);
-                        double rest = double.Parse(TextBoxRest.Text);
-                        velocity = pipeProxy.GetStarVelocity(observed, rest).ToString("F2"); //Keep 2 digits after decimal point
-                    }
-                    if (!string.IsNullOrEmpty(TextBoxParaAngle.Text))
-                    {
-                        double angle = double.Parse(TextBoxParaAngle.Text);
-                        distance = pipeProxy.GetStarDistance(angle).ToString("F4"); //Keep 4 digits after decimal point
-                    }
-                    if (!string.IsNullOrEmpty(TextBoxCelsius.Text))
-                    {
-                        double celsius = double.Parse(UpDownPlusMinus.Text + TextBoxCelsius.Text);
-                        kelvin = pipeProxy.GetTempKelvin(celsius).ToString();
-                    }
-                    if (!string.IsNullOrEmpty(TextBoxMass.Text))
-                    {
-                        double mass = double.Parse(TextBoxMass.Text + "E" + UpDownNotation.Value.ToString());
-                        horizon = pipeProxy.GetSchRadius(mass).ToString("E1");  // kepp 1 decimal place
-                    }
-                    string[] row = { distance, kelvin, horizon };   //Prepare row with results
-                    ListViewResults.Items.Add(velocity.ToString()).SubItems.AddRange(row);  //Add the row to listView
-                    ResetInputs();  //ResetInputs
-                }
-            }   //Catch all the exceptions with communication errors.
-            catch (ActionNotSupportedException ex)  
+            }
+            //Catch all the exceptions with communication errors.
+            catch (ActionNotSupportedException ex)
             {
-                Trace.WriteLine(ex.Message);    
+                Trace.WriteLine(ex.Message);
+                SetMessage(GetExceptionMessage(ex), "error");
             }
             catch (AddressAlreadyInUseException ex)
-            {   
+            {
                 Trace.WriteLine(ex.Message);
+                SetMessage(GetExceptionMessage(ex), "error");
             }
             catch (AddressAccessDeniedException ex)
             {
                 Trace.WriteLine(ex.Message);
+                SetMessage(GetExceptionMessage(ex), "error");
             }
             catch (System.ServiceModel.Channels.RedirectionException ex)
             {
                 Trace.WriteLine(ex.Message);
+                SetMessage(GetExceptionMessage(ex), "error");
             }
             catch (System.ServiceModel.Channels.RetryException ex)
             {
                 Trace.WriteLine(ex.Message);
+                SetMessage(GetExceptionMessage(ex), "error");
             }
             catch (System.ServiceModel.ChannelTerminatedException ex)
             {
                 Trace.WriteLine(ex.Message);
+                SetMessage(GetExceptionMessage(ex), "error");
             }
             catch (CommunicationObjectFaultedException ex)
             {
                 Trace.WriteLine(ex.Message);
+                SetMessage(GetExceptionMessage(ex), "error");
             }
             catch (CommunicationObjectAbortedException ex)
             {
                 Trace.WriteLine(ex.Message);
+                SetMessage(GetExceptionMessage(ex), "error");
             }
             catch (System.ServiceModel.Dispatcher.MessageFilterException ex)
             {
                 Trace.WriteLine(ex.Message);
+                SetMessage(GetExceptionMessage(ex), "error");
             }
             catch (EndpointNotFoundException ex)
             {
                 Trace.WriteLine(ex.Message);
+                SetMessage(GetExceptionMessage(ex), "error");
             }
             catch (System.ServiceModel.FaultException ex)
             {
                 Trace.WriteLine(ex.Message);
+                SetMessage(GetExceptionMessage(ex), "error");
             }
             catch (System.ServiceModel.PoisonMessageException ex)
             {
                 Trace.WriteLine(ex.Message);
+                SetMessage(GetExceptionMessage(ex), "error");
             }
             catch (System.ServiceModel.Security.MessageSecurityException ex)
             {
                 Trace.WriteLine(ex.Message);
+                SetMessage(GetExceptionMessage(ex), "error");
             }
             catch (ProtocolException ex)
             {
                 Trace.WriteLine(ex.Message);
+                SetMessage(GetExceptionMessage(ex), "error");
             }
             catch (System.ServiceModel.Security.SecurityAccessDeniedException ex)
             {
                 Trace.WriteLine(ex.Message);
+                SetMessage(GetExceptionMessage(ex), "error");
             }
             catch (System.ServiceModel.Security.SecurityNegotiationException ex)
             {
                 Trace.WriteLine(ex.Message);
+                SetMessage(GetExceptionMessage(ex), "error");
             }
             catch (System.ServiceModel.ServiceActivationException ex)
             {
                 Trace.WriteLine(ex.Message);
+                SetMessage(GetExceptionMessage(ex), "error");
             }
             catch (CommunicationException ex)
             {
                 Trace.WriteLine(ex.Message);
+                SetMessage(GetExceptionMessage(ex), "error");
             }
             catch (Exception ex)
             {
                 Trace.WriteLine(ex.Message);
+                SetMessage(GetExceptionMessage(ex), "error");
             }
         }
-        /// <summary>
-        /// Set StatuBar Message
-        /// </summary>
-        /// <param name="message"></param>
-        /// <param name="mode">Default:Red Info:Blue</param>
-        private void SetMessage(string message, string mode)
+        private string GetExceptionMessage(Exception ex)
+        { // Get the first 60 characters of the exception message
+            string message = ex.Message.Substring(0, 60);
+            // Append the ellipsis and the instruction to check the trace file
+            message += "…(Check TraceFile.)"; 
+            // Return the message
+            return message;
+        }
+        private bool IsValidMayEmptyCelsius()
         {
-            toolStripStatusInfo.Text = message;
-            System.Drawing.Color color = System.Drawing.Color.Red;
-            if (mode == "info")
-            { 
-                color = System.Drawing.Color.Blue;
+            if (!string.IsNullOrEmpty(TextBoxCelsius.Text))
+            {   //Temperature is Celsius (C) = a value must be greater than -273.
+                if (double.Parse(UpDownPlusMinus.Text + TextBoxCelsius.Text) < -273)
+                {
+                    SetMessage("Invalid temperature.", "error");
+                    return false;
+                }
+                else
+                { 
+                    return true; 
+                }
             }
-            toolStripStatusInfo.BackColor = color;
-            //toolStripStatusInfo.Font.Size = 
-            StatusbarTimer();
+            else
+            { return true; }
         }
-        private void StatusbarTimer()
-        {
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer
-            {
-                Interval = 5000 //5 seconds
-            };
-            //timer.Enabled = true;
-            timer.Tick += OnTickEvent; // Add an event handler
-            //timer1.Tick += new System.EventHandler(OnTimerEvent);
-            timer.Start(); // Start the timer
-            
-        }
-        private void OnTickEvent(object sender, EventArgs e)
-        {
-            toolStripStatusInfo.Text = string.Empty;
-        }
-        //Reset Inputs
         private void ResetInputs()
-        { 
+        {   //Reset Inputs
             TextBoxObserved.Clear();
             TextBoxRest.Clear();
             TextBoxCelsius.Clear();
@@ -228,13 +239,11 @@ namespace MalinAstrionics
             }
             return res;
         }
-
         private void MalinSpace_Load(object sender, EventArgs e)
         {
             //Set the minus as a default value in Celsius
             UpDownPlusMinus.SelectedIndex = 1;
         }
-
         private void ButtonUK_Click(object sender, EventArgs e)
         {
             //Get the buttons (UK, French, German) name 
@@ -254,7 +263,54 @@ namespace MalinAstrionics
                 Controls.Clear();
                 InitializeComponent();
         }
+        #endregion
 
+        #region StatusBar Message
+        /// <summary>
+        /// Set StatusBar Message
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="mode">Default error:Red info:Blue warning:Yellow</param>
+        private void SetMessage(string message, string mode)
+        {
+            toolStripStatusInfo.Text = message;
+            //Defult colour: Red for error
+            System.Drawing.Color color = System.Drawing.Color.FromArgb(245, 66, 87);
+            if (mode == "info")
+            {   //Blue
+                color = System.Drawing.Color.FromArgb(66, 164, 245);
+            }
+            else if (mode == "warning")
+            {   //Orange
+                color = System.Drawing.Color.FromArgb(237, 152, 5);
+            }
+            //Set back color
+            toolStripStatusInfo.BackColor = color;
+            //Call timer
+            StatusbarTimer();
+        }
+        private void StatusbarTimer()
+        {
+            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+            int interval = 5000;
+            timer.Interval = interval;
+            timer.Tick += OnTickEvent; // Add an event handler
+            timer.Start(); // Start the timer 
+        }
+        private void OnTickEvent(object sender, EventArgs e)
+        {
+            toolStripStatusInfo.Text = string.Empty;
+            toolStripStatusInfo.Text = string.Empty;
+            // Get the timer object
+            System.Windows.Forms.Timer timer = sender as System.Windows.Forms.Timer;
+            // Stop the timer
+            timer.Stop();
+            // Dispose the timer
+            timer.Dispose();
+        }
+        #endregion
+
+        #region Day, Night and Original mode
         private void DayToolStripMenuItem_Click(object sender, EventArgs e)
         {
             BackgroundImage = null;
@@ -277,7 +333,6 @@ namespace MalinAstrionics
             }
             ListViewResults.BackColor = Color.FromArgb(164, 176, 190);
         }
-
         private void OriginalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.ForeColor = default(Color);
@@ -288,7 +343,6 @@ namespace MalinAstrionics
             }
             ListViewResults.BackColor = default(Color);
         }
-
         private void ColourToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ColorDialog colorDlg = new ColorDialog();
@@ -305,6 +359,6 @@ namespace MalinAstrionics
                 }
             }
         }
-        
+        #endregion
     }
 }
