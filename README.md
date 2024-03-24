@@ -3,6 +3,10 @@ A robust astronomical calculation system that provides essential services to cli
 
 ### 1. Server Component: .NET Console Application
 ### 2. Third-Party Library
+<p float="center">
+  <img src="https://github.com/Nanisong/MalinAstrionics/assets/124329841/5ed369d4-4470-4b92-9c00-6916c1a0bd9a.png" width="550" />
+</p>
+
 ### 3. Client Component: Windows Application (.NET Framework)
 ### 4. Windows Communications Foundation (WCF)
 ### 5. Multilingual Support
