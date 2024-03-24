@@ -1,12 +1,13 @@
 # Astronomical Calculation System with Multilingual and Customisable UI
 A robust astronomical calculation system that provides essential services to clients connecting via a private network.
 
-## 1. Server Component: .NET Console Application
-## 2. Third-Party Library
-## 3. Client Component: Windows Application (.NET Framework)
-## 4. Windows Communications Foundation (WCF)
-## 5. Multilingual Support
-## 6. Customisable User Interface (UI)
+### 1. Server Component: .NET Console Application
+### 2. Third-Party Library
+### 3. Client Component: Windows Application (.NET Framework)
+### 4. Windows Communications Foundation (WCF)
+### 5. Multilingual Support
+### 6. Customisable User Interface (UI)
+
 
 ## Screenshots
 ### Calculating
