@@ -14,16 +14,16 @@ A robust astronomical calculation system that provides essential services to cli
 
 
 ## Screenshots
-### Calculating
+### - Calculating
 ![ezgif-6-8e3c215b47](https://github.com/Nanisong/MalinAstrionics/assets/124329841/a1f672bf-d1d1-4e3d-a94a-2f469e1d24b4)
 
-### Style 
+### - Style 
 ![ezgif-6-e3254dacd1](https://github.com/Nanisong/MalinAstrionics/assets/124329841/e6cfd293-bc09-47e3-bab9-abc833559fef)
 
-### Colour
+### - Colour
 ![ezgif-6-fb31e12070](https://github.com/Nanisong/MalinAstrionics/assets/124329841/b84ebfbe-7aa2-4f2b-9542-faf6fe25da64)
 
-### Language
+### - Language
 ![ezgif-1-a83e2f5480](https://github.com/Nanisong/MalinAstrionics/assets/124329841/58957255-323f-4246-9bf2-99b31c800717)
 
 
